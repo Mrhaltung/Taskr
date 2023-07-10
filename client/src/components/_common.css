@@ -1,0 +1,460 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  overflow: hidden;
+}
+.logoSearch {
+  display: flex;
+  gap: 0.75rem;
+}
+.search {
+  display: flex;
+  background-color: var(--inputColor);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.search > input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.search > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(106.23deg, #f99827, #f95f35 100%);
+  border-radius: 5px;
+  padding: 2px 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.profileCard {
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 1rem;
+  overflow-x: clip;
+  background: var(--cardColor);
+}
+.profileCard > span {
+  font-weight: bold;
+  color: orange;
+  align-self: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.profileImages {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileImages > img:nth-of-type(1) {
+  width: 100%;
+}
+
+.profileImages > img:nth-of-type(2) {
+  width: 6rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -3rem;
+  box-shadow: var(--profileShadow);
+}
+
+.profileName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 10px;
+}
+.profileName > span:nth-of-type(1) {
+  font-weight: bold;
+}
+
+.followStatus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.followStatus > hr {
+  width: 85%;
+  border: 1px solid var(--hrColor);
+}
+
+.followStatus > div {
+  display: flex;
+  gap: 1px;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+}
+.follow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+  justify-content: center;
+}
+.vl {
+  height: 150%;
+  border-left: 2px solid var(--hrColor);
+}
+
+.followerCard {
+  width: 100%;
+  border-radius: 0.7rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+}
+
+.follower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.follower > div {
+  display: flex;
+  gap: 10px;
+}
+
+.followerImg {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.name > span:nth-of-type(1) {
+  font-weight: bold;
+}
+
+.fc-button {
+  height: 2rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.UnfollowButton{
+  color: var(--orange);
+  border: 2px solid var(--orange);
+  cursor: pointer;
+  background: transparent;
+}
+.postSide {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 110vh;
+  overflow: auto;
+}
+
+.postShare {
+  display: flex;
+  gap: 1rem;
+  background-color: var(--cardColor);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.postShare > img {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.postShare > div {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 1rem;
+}
+
+.postShare > div > input {
+  background-color: var(--inputColor);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 17px;
+  border: none;
+  outline: none;
+}
+
+.postOptions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.option {
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.option:hover {
+  cursor: pointer;
+}
+
+.ps-button {
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 12px;
+}
+
+.previewImage {
+  position: relative;
+}
+
+.previewImage > svg {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  cursor: pointer;
+}
+
+.previewImage > img {
+  width: 100%;
+  max-height: 20rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.post {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: var(--cardColor);
+  border-radius: 1rem;
+  gap: 1rem;
+}
+.header{
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.detail{
+  font-size: 16px;
+}
+.post > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.postReact {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  cursor: pointer;
+}
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.navIcons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.navIcons > img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.r-button {
+  height: 3rem;
+  width: 80%;
+  align-self: center;
+}
+.TrendCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--cardColor);
+  padding: 1rem;
+  border-radius: 1rem;
+  padding-left: 2rem;
+}
+
+.trend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.trend > span:nth-of-type(1) {
+  font-weight: bold;
+}
+.trend > span:nth-of-type(2) {
+  font-size: 13px;
+}
+.infoCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: var(--cardColor);
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 90%;
+}
+
+.infoHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infoHead > div:hover {
+  cursor: pointer;
+}
+
+.logout-button {
+  width: 7rem;
+  height: 2rem;
+  margin-top: 6rem;
+  align-self: flex-end;
+}
+.infoForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.infoInput {
+  border: none;
+  outline: none;
+  background-color: var(--inputColor);
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1;
+}
+
+.infoForm > div {
+  display: flex;
+  gap: 1rem;
+  height: 2rem;
+  width: 90%;
+}
+
+.infoButton {
+  width: 6rem;
+  height: 2rem;
+  align-self: flex-end;
+}
+
+.ChatBox-container {
+  background: var(--cardColor);
+  border-radius: 1rem;
+  display: grid;
+  grid-template-rows: 14vh 60vh 13vh;
+}
+
+.chat-header {
+  padding: 1rem 1rem 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  overflow: scroll;
+}
+
+.message {
+
+background: var(--buttonBg);
+color: white;
+padding: 0.7rem;
+border-radius: 1rem 1rem 1rem 0;
+max-width: 28rem;
+width: fit-content;
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+}
+
+.message>span:nth-child(2){
+  font-size: 0.7rem;
+  color: var(--textColor);
+  align-self: end;
+}
+
+.own {
+align-self: flex-end;
+border-radius: 1rem 1rem 0 1rem;
+background: linear-gradient(98.63deg, #24e4f0 0%, #358ff9 100%);
+}
+
+
+
+.chat-sender {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  height: 3.5rem;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  align-self: end;
+}
+.chat-sender>input{
+  height: 70%;
+  background-color: rgb(236, 236, 236);
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  flex  :1 ;
+  font-size: 14px;
+  padding: 0px 15px 0px 15px;
+}
+.chat-sender>div:nth-of-type(1)
+{
+  background: rgb(233, 233, 233);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer
+}
+.chat-sender>div{
+  height: 70%;
+  padding: 0px 15px 0px 15px;
+}
