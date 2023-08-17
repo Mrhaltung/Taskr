@@ -29,4 +29,4 @@ In Chat Application you can search for the user if it is there and you can have 
 ![Screenshot 2023-07-10 175700](https://github.com/Mrhaltung/Taskr/assets/92170743/3928ac0d-ced1-42ef-9b74-85333702b783)
 
 
-If You are read this all you will get the code in the master branch Thank YOU
+If You are reading this all you will get the code in the master branch Thank YOU
